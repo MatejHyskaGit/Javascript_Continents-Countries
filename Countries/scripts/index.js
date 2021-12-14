@@ -37,11 +37,9 @@ const init = function() {
         selectedContinent.getElementsByTagName("ul")[0].appendChild(selectedCountry);
         selectedCountry.classList.remove("active_country");
         selectedContinent.classList.remove("active_cont");
-        console.log(selectedContinent);
         button.classList.add("disabled");
         let output = document.getElementById("output").children[0];
-        console.log(output);
-        output.innerHTML = selectedCountry.innerText + " Se přidal pod " + selectedContinent.children.innerText;
+        output.innerHTML = selectedCountry.innerText + " Se přidal pod " + selectedContinent.innerText;
     })
 }
 
